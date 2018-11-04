@@ -1,0 +1,40 @@
+{
+  "name": "utilcores",
+  "version": "0.1.0",
+  "description": "A small utility core library for building basic data flows and component interraction.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config config/webpack.dev.config",
+    "lint": "tslint -c tslint.json 'src/**/*.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utilCores/utilCores.git"
+  },
+  "keywords": [
+    "util",
+    "core"
+  ],
+  "author": "Dražen Buljovčić [drazen1buljovcic@gmail.com, Stanimir Stoychev []",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/utilCores/utilCores/issues"
+  },
+  "homepage": "https://github.com/utilCores/utilCores#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
+    "ts-loader": "^5.3.0",
+    "tslint": "^5.11.0",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^3.1.6",
+    "typescript-loader": "^1.1.3",
+    "webpack": "^4.24.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.4"
+  }
+}
