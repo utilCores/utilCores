@@ -1,6 +1,6 @@
 declare var window: Window;
 
-class UtilCores {
+class UtilCore {
   private window: Window;
 
   constructor(global: Window) {
@@ -9,4 +9,4 @@ class UtilCores {
   }
 }
 
-export default new UtilCores(window);
+export default UtilCore;
