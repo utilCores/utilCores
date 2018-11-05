@@ -6,8 +6,12 @@ const PUBLIC_DIR = path.resolve(ROOT_DIR, 'public');
 
 const PATH_TO_INDEX = path.resolve(ROOT_DIR, 'app', 'index.html');
 
+const VERSION = package.version;
+
 module.exports = {
   ROOT_DIR,
   PUBLIC_DIR,
   PATH_TO_INDEX,
+
+  VERSION,
 };

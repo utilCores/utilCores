@@ -1,11 +1,12 @@
 const path = require('path');
-
 const webpack = require('webpack');
 
 const applicationConstants = require('./constants/');
 
 const {
   ROOT_DIR,
+
+  VERSION,
 } = applicationConstants;
 
 const CONFIG = {
@@ -28,19 +29,18 @@ const CONFIG = {
     ],
   },
   output: {
-    filename: 'main.bundle.[hash:6].js',
+    filename: `main.bundle.${VERSION}.js`,
     path: path.resolve(ROOT_DIR, 'public'),
   },
   resolve: {
     extensions: [ '.tsx', '.ts', '.js' ],
     alias: {
-      '@': path.resolve(ROOT_DIR, 'src'),
+      '@': path.resolve(ROOT_DIR, 'src/'),
     },
   },
   plugins: [
     new webpack.DefinePlugin({
       env: JSON.stringify(''),
-      base: JSON.stringify(''),
     }),
     
     // new webpack.optimize.CommonsChunkPlugin({

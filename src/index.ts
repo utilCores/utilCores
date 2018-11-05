@@ -1,12 +1,12 @@
-declare var window: Window;
+import config, { DEVELOPMENT } from '@/constants/app.config';
+declare const module: any;
 
-class UtilCore {
-  private window: Window;
-
-  constructor(global: Window) {
-    this.window = global;
-    console.log('hi');
+if (config.env === DEVELOPMENT) {
+  if (module.hot) {
+    module.hot.accept();
   }
 }
 
-export default UtilCore;
+class UtilCores {}
+
+export default UtilCores;
